@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "id": "demo-1",
+      "team": 6,
+      "theme": "Estructura",
+      "difficulty": "Fácil",
+      "points": 100,
+      "text": "¿Qué representa una relación de precedencia en una red de actividades?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El orden lógico entre dos actividades"
+        },
+        {
+          "id": "b",
+          "text": "El costo de una actividad"
+        },
+        {
+          "id": "c",
+          "text": "La cantidad de trabajadores"
+        },
+        {
+          "id": "d",
+          "text": "La fecha de pago del proyecto"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Una precedencia establece una restricción lógica: una actividad depende de otra, según el tipo de relación definido.",
+      "hint": "Piensa en qué debe ocurrir antes de iniciar otra actividad.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    }
+  ]
+}

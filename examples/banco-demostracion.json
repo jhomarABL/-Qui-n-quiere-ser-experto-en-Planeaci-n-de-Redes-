@@ -1,0 +1,664 @@
+{
+  "questions": [
+    {
+      "id": "demo-1",
+      "team": 6,
+      "theme": "Estructura",
+      "difficulty": "Fácil",
+      "points": 100,
+      "text": "¿Qué representa una relación de precedencia en una red de actividades?",
+      "options": [
+        {
+          "id": "a",
+          "text": "El orden lógico entre dos actividades"
+        },
+        {
+          "id": "b",
+          "text": "El costo de una actividad"
+        },
+        {
+          "id": "c",
+          "text": "La cantidad de trabajadores"
+        },
+        {
+          "id": "d",
+          "text": "La fecha de pago del proyecto"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Una precedencia establece una restricción lógica: una actividad depende de otra, según el tipo de relación definido.",
+      "hint": "Piensa en qué debe ocurrir antes de iniciar otra actividad.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-2",
+      "team": 6,
+      "theme": "Estructura",
+      "difficulty": "Media",
+      "points": 100,
+      "text": "En una red actividad-en-nodo, ¿qué representa cada nodo?",
+      "options": [
+        {
+          "id": "b",
+          "text": "Únicamente un costo"
+        },
+        {
+          "id": "c",
+          "text": "Un recurso compartido"
+        },
+        {
+          "id": "d",
+          "text": "Una unidad monetaria"
+        },
+        {
+          "id": "a",
+          "text": "Una actividad del proyecto"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "En una red actividad-en-nodo (AON), los nodos representan actividades y los arcos representan relaciones de precedencia.",
+      "hint": "El nombre del modelo indica qué se coloca dentro del nodo.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-3",
+      "team": 6,
+      "theme": "Estructura",
+      "difficulty": "Media",
+      "points": 100,
+      "text": "¿Qué condición impide una programación válida en una red de precedencias clásica?",
+      "options": [
+        {
+          "id": "c",
+          "text": "Tener una actividad inicial"
+        },
+        {
+          "id": "d",
+          "text": "Tener diferentes duraciones"
+        },
+        {
+          "id": "a",
+          "text": "La existencia de un ciclo dirigido"
+        },
+        {
+          "id": "b",
+          "text": "Tener actividades paralelas"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Un ciclo dirigido genera dependencias circulares. La red clásica de precedencias debe ser acíclica para permitir su programación.",
+      "hint": "Considera si una actividad podría terminar dependiendo de sí misma.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-4",
+      "team": 6,
+      "theme": "Estructura",
+      "difficulty": "Difícil",
+      "points": 100,
+      "text": "¿Qué debe verificarse antes de calcular tiempos en una red de proyecto?",
+      "options": [
+        {
+          "id": "d",
+          "text": "Que cada actividad use una persona"
+        },
+        {
+          "id": "a",
+          "text": "Que las precedencias sean coherentes y completas"
+        },
+        {
+          "id": "b",
+          "text": "Que todas las actividades cuesten igual"
+        },
+        {
+          "id": "c",
+          "text": "Que solo exista una ruta"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "La estructura lógica debe validarse antes del cálculo temporal. Omitir dependencias o introducir ciclos invalida el análisis.",
+      "hint": "Primero valida la lógica del proyecto.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-5",
+      "team": 7,
+      "theme": "Tiempos",
+      "difficulty": "Fácil",
+      "points": 100,
+      "text": "¿Qué caracteriza a una ruta crítica en el CPM básico?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Determina la duración mínima del proyecto"
+        },
+        {
+          "id": "b",
+          "text": "Contiene siempre más actividades"
+        },
+        {
+          "id": "c",
+          "text": "Tiene el costo directo más alto"
+        },
+        {
+          "id": "d",
+          "text": "Usa todos los recursos disponibles"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Con duraciones y precedencias dadas, sin restricciones adicionales de recursos, la ruta de mayor duración determina la duración mínima del proyecto.",
+      "hint": "Busca el camino que determina cuándo puede terminar el proyecto.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-6",
+      "team": 7,
+      "theme": "Tiempos",
+      "difficulty": "Media",
+      "points": 100,
+      "text": "Si una actividad puede comenzar en el día 3 y dura 5 días, ¿cuál es su fin temprano?",
+      "options": [
+        {
+          "id": "b",
+          "text": "Día 2"
+        },
+        {
+          "id": "c",
+          "text": "Día 15"
+        },
+        {
+          "id": "d",
+          "text": "Día 5"
+        },
+        {
+          "id": "a",
+          "text": "Día 8"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Ejemplo independiente de demostración, con tiempo continuo: fin temprano = inicio temprano + duración = 3 + 5 = 8.",
+      "hint": "Suma la duración al inicio temprano.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-7",
+      "team": 7,
+      "theme": "Tiempos",
+      "difficulty": "Media",
+      "points": 100,
+      "text": "¿Qué indica una holgura total de cero en el CPM básico?",
+      "options": [
+        {
+          "id": "c",
+          "text": "Que no tiene predecesoras"
+        },
+        {
+          "id": "d",
+          "text": "Que se puede retrasar sin límite"
+        },
+        {
+          "id": "a",
+          "text": "Que la actividad es crítica"
+        },
+        {
+          "id": "b",
+          "text": "Que la actividad no tiene duración"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "La holgura total nula identifica una actividad crítica en el CPM básico. Un retraso sin compensación afecta la terminación del proyecto.",
+      "hint": "Compara el inicio tardío con el inicio temprano.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-8",
+      "team": 7,
+      "theme": "Tiempos",
+      "difficulty": "Difícil",
+      "points": 100,
+      "text": "En el recorrido hacia adelante, ¿cómo se obtiene el inicio temprano con varias predecesoras fin-inicio sin desfase?",
+      "options": [
+        {
+          "id": "d",
+          "text": "Sumando todas sus holguras"
+        },
+        {
+          "id": "a",
+          "text": "Con el máximo de sus fines tempranos"
+        },
+        {
+          "id": "b",
+          "text": "Con el mínimo de sus inicios"
+        },
+        {
+          "id": "c",
+          "text": "Con el promedio de sus duraciones"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "La actividad debe esperar a que concluyan todas sus predecesoras. Por ello, su inicio temprano es el máximo de los fines tempranos de estas.",
+      "hint": "La actividad debe esperar a la última predecesora en terminar.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-9",
+      "team": 8,
+      "theme": "Costos",
+      "difficulty": "Fácil",
+      "points": 100,
+      "text": "¿Qué es un costo directo de una actividad?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un costo atribuible a su ejecución"
+        },
+        {
+          "id": "b",
+          "text": "Todo costo administrativo general"
+        },
+        {
+          "id": "c",
+          "text": "Una holgura de tiempo"
+        },
+        {
+          "id": "d",
+          "text": "La duración de la ruta crítica"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Los costos directos pueden atribuirse a una actividad específica, por ejemplo materiales o mano de obra directamente vinculada con su ejecución.",
+      "hint": "Piensa en un recurso utilizado específicamente en esa actividad.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-10",
+      "team": 8,
+      "theme": "Costos",
+      "difficulty": "Media",
+      "points": 100,
+      "text": "Una actividad usa 4 horas a 25 unidades por hora. ¿Cuál es su costo en este ejemplo?",
+      "options": [
+        {
+          "id": "b",
+          "text": "29 unidades"
+        },
+        {
+          "id": "c",
+          "text": "6,25 unidades"
+        },
+        {
+          "id": "d",
+          "text": "400 unidades"
+        },
+        {
+          "id": "a",
+          "text": "100 unidades"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Ejemplo independiente de demostración: costo = horas × tarifa = 4 × 25 = 100 unidades ficticias. No corresponde al ejercicio real del taller.",
+      "hint": "Multiplica las horas por la tarifa.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-11",
+      "team": 8,
+      "theme": "Costos",
+      "difficulty": "Media",
+      "points": 100,
+      "text": "¿Qué busca el análisis de compresión tiempo-costo?",
+      "options": [
+        {
+          "id": "c",
+          "text": "Aumentar siempre la holgura"
+        },
+        {
+          "id": "d",
+          "text": "Asignar el mismo costo a cada tarea"
+        },
+        {
+          "id": "a",
+          "text": "Evaluar el costo de reducir la duración"
+        },
+        {
+          "id": "b",
+          "text": "Eliminar todas las precedencias"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "La compresión evalúa reducciones de duración y sus costos incrementales, atendiendo a las rutas críticas y a los límites de cada actividad.",
+      "hint": "Acortar una actividad puede requerir más recursos o un método distinto.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-12",
+      "team": 8,
+      "theme": "Costos",
+      "difficulty": "Difícil",
+      "points": 100,
+      "text": "¿Cómo se calcula la pendiente de costo de compresión en el modelo lineal?",
+      "options": [
+        {
+          "id": "d",
+          "text": "Holgura / número de recursos"
+        },
+        {
+          "id": "a",
+          "text": "(Costo intensivo − costo normal) / (Tiempo normal − tiempo intensivo)"
+        },
+        {
+          "id": "b",
+          "text": "Costo normal / costo intensivo"
+        },
+        {
+          "id": "c",
+          "text": "Tiempo normal × costo normal"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Pendiente = (costo intensivo − costo normal) / (tiempo normal − tiempo intensivo), con denominador positivo. Expresa costo incremental por unidad de tiempo reducida.",
+      "hint": "Relaciona el incremento del costo con la reducción del tiempo.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-13",
+      "team": 9,
+      "theme": "Recursos",
+      "difficulty": "Fácil",
+      "points": 100,
+      "text": "¿Qué representa un histograma de recursos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La demanda de recursos a lo largo del tiempo"
+        },
+        {
+          "id": "b",
+          "text": "Solo las relaciones de precedencia"
+        },
+        {
+          "id": "c",
+          "text": "La probabilidad de cada respuesta"
+        },
+        {
+          "id": "d",
+          "text": "La lista de costos indirectos"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "El histograma muestra la cantidad de recurso requerida en cada intervalo, permitiendo identificar picos y posibles sobreasignaciones.",
+      "hint": "Sus ejes relacionan cantidad de recurso y tiempo.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-14",
+      "team": 9,
+      "theme": "Recursos",
+      "difficulty": "Media",
+      "points": 100,
+      "text": "¿Cuándo existe sobreasignación de un recurso?",
+      "options": [
+        {
+          "id": "b",
+          "text": "Cuando la demanda es cero"
+        },
+        {
+          "id": "c",
+          "text": "Cuando toda tarea es crítica"
+        },
+        {
+          "id": "d",
+          "text": "Cuando dos tareas tienen igual costo"
+        },
+        {
+          "id": "a",
+          "text": "Cuando la demanda supera su disponibilidad"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "La sobreasignación ocurre cuando la demanda simultánea excede la capacidad disponible del recurso.",
+      "hint": "Compara lo requerido con lo disponible en un mismo intervalo.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-15",
+      "team": 9,
+      "theme": "Recursos",
+      "difficulty": "Media",
+      "points": 100,
+      "text": "¿Qué permite desplazar una actividad no crítica sin retrasar el proyecto, bajo supuestos CPM?",
+      "options": [
+        {
+          "id": "c",
+          "text": "Su costo total"
+        },
+        {
+          "id": "d",
+          "text": "El número de nodos de la red"
+        },
+        {
+          "id": "a",
+          "text": "Su holgura disponible"
+        },
+        {
+          "id": "b",
+          "text": "Su identificador"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "La holgura permite desplazar actividades dentro de ciertos límites temporales. Deben revisarse las dependencias y la disponibilidad de recursos.",
+      "hint": "Busca el margen temporal de la actividad.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-16",
+      "team": 9,
+      "theme": "Recursos",
+      "difficulty": "Difícil",
+      "points": 100,
+      "text": "¿Por qué una restricción de recursos puede modificar la fecha final del CPM?",
+      "options": [
+        {
+          "id": "d",
+          "text": "Porque siempre reduce la ruta crítica"
+        },
+        {
+          "id": "a",
+          "text": "Porque puede impedir ejecutar actividades simultáneamente"
+        },
+        {
+          "id": "b",
+          "text": "Porque elimina la duración de las tareas"
+        },
+        {
+          "id": "c",
+          "text": "Porque vuelve innecesarias las precedencias"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "El CPM básico no limita la disponibilidad de recursos. Al introducir límites, algunas actividades deben reprogramarse, lo que puede ampliar el plazo.",
+      "hint": "Dos tareas pueden ser lógicamente paralelas, pero necesitar el mismo recurso escaso.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-17",
+      "team": 10,
+      "theme": "Recursos",
+      "difficulty": "Fácil",
+      "points": 100,
+      "text": "¿Cuál es un objetivo de la nivelación de recursos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resolver conflictos de disponibilidad"
+        },
+        {
+          "id": "b",
+          "text": "Eliminar todos los costos"
+        },
+        {
+          "id": "c",
+          "text": "Convertir toda actividad en hito"
+        },
+        {
+          "id": "d",
+          "text": "Ignorar las dependencias"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "La nivelación ajusta la programación ante limitaciones de recursos. Puede cambiar la duración total y las actividades críticas.",
+      "hint": "Piensa en qué ocurre cuando hay más trabajo que capacidad.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-18",
+      "team": 10,
+      "theme": "Recursos",
+      "difficulty": "Media",
+      "points": 100,
+      "text": "Si dos tareas simultáneas requieren 3 y 4 personas, ¿cuál es su demanda conjunta?",
+      "options": [
+        {
+          "id": "b",
+          "text": "1 persona"
+        },
+        {
+          "id": "c",
+          "text": "12 personas"
+        },
+        {
+          "id": "d",
+          "text": "4 personas"
+        },
+        {
+          "id": "a",
+          "text": "7 personas"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "Ejemplo independiente de demostración: demanda conjunta = 3 + 4 = 7 personas, si ambos requerimientos se mantienen en el mismo intervalo.",
+      "hint": "Suma las demandas que coinciden en el tiempo.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-19",
+      "team": 10,
+      "theme": "Recursos",
+      "difficulty": "Media",
+      "points": 100,
+      "text": "¿Qué diferencia al suavizado de recursos de una nivelación que puede extender el plazo?",
+      "options": [
+        {
+          "id": "c",
+          "text": "Siempre elimina la ruta crítica"
+        },
+        {
+          "id": "d",
+          "text": "Exige aumentar todos los costos"
+        },
+        {
+          "id": "a",
+          "text": "Busca suavizar la demanda respetando la fecha final"
+        },
+        {
+          "id": "b",
+          "text": "No considera las holguras"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "El suavizado usa márgenes de programación para reducir variaciones de demanda sin modificar la fecha final fijada, cuando es posible.",
+      "hint": "Se utiliza el margen disponible, no un plazo ilimitado.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    },
+    {
+      "id": "demo-20",
+      "team": 10,
+      "theme": "Recursos",
+      "difficulty": "Difícil",
+      "points": 100,
+      "text": "Antes de desplazar una actividad para resolver un conflicto, ¿qué se debe revisar?",
+      "options": [
+        {
+          "id": "d",
+          "text": "Solo el costo indirecto"
+        },
+        {
+          "id": "a",
+          "text": "Precedencias, holguras y disponibilidad"
+        },
+        {
+          "id": "b",
+          "text": "Solo su nombre"
+        },
+        {
+          "id": "c",
+          "text": "Únicamente el color del nodo"
+        }
+      ],
+      "correctId": "a",
+      "explanation": "La decisión debe respetar la lógica, los márgenes temporales y la capacidad de los recursos. Después es necesario recalcular la programación afectada.",
+      "hint": "Una decisión de recursos también tiene consecuencias temporales.",
+      "reference": "Demostración conceptual independiente. Reemplazar por el ejercicio del taller.",
+      "extra": "",
+      "image": "",
+      "demo": true
+    }
+  ]
+}
